@@ -1,22 +1,18 @@
-/* =========================
-   RESET & BASE
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #F7F3EF;
   color: #5C4033;
-  scroll-behavior: smooth;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 .custom-navbar {
   height: 72px;
   background-color: #F7F3EF;
@@ -35,25 +31,20 @@ body {
 }
 
 .nav-link {
-  font-size: 15px;
   color: #5C4033 !important;
   margin-left: 20px;
   padding: 6px 14px;
   border-radius: 18px;
-  transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
   background-color: #E6D3C1;
 }
 
-/* =========================
-   HERO SECTION (FIXED)
-========================= */
+/* HERO */
 .hero-section {
   min-height: calc(100vh - 72px);
   padding-top: 90px;
-  padding-bottom: 60px;
   background-color: #F2E8DF;
   display: flex;
   align-items: center;
@@ -62,7 +53,6 @@ body {
 .hero-section h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 46px;
-  font-weight: 600;
   color: #4A2E1F;
 }
 
@@ -71,7 +61,6 @@ body {
 }
 
 .hero-section h4 {
-  font-size: 20px;
   margin-top: 12px;
   color: #6B4F3F;
 }
@@ -79,118 +68,65 @@ body {
 .hero-section p {
   margin-top: 16px;
   max-width: 520px;
-  line-height: 1.7;
   color: #7A5C4B;
+  line-height: 1.6;
 }
 
 .hero-btn {
   display: inline-block;
   margin-top: 22px;
-  padding: 12px 32px;
+  padding: 12px 30px;
   background-color: #C08457;
-  color: #ffffff;
+  color: white;
   border-radius: 30px;
   text-decoration: none;
 }
 
-.hero-btn:hover {
-  background-color: #A86C42;
-}
-
-/* Profile Image */
+/* PROFILE IMAGE */
 .profile-img {
   width: 260px;
   height: 260px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 20px 40px rgba(74, 46, 31, 0.25);
 }
 
-/* =========================
-   SECTION COMMON
-========================= */
+/* SECTIONS */
 .section-light {
-  padding: 90px 0;
   background-color: #F7F3EF;
+  padding: 80px 0;
 }
 
 .section-dark {
-  padding: 90px 0;
   background-color: #EFE3D8;
+  padding: 80px 0;
 }
 
 .section-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 32px;
   text-align: center;
   margin-bottom: 50px;
   color: #4A2E1F;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 .service-card {
   background-color: #ffffff;
-  padding: 36px;
+  padding: 32px;
   border-radius: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 35px rgba(74, 46, 31, 0.18);
-}
-
-.service-card i {
-  font-size: 42px;
-  color: #C08457;
-  margin-bottom: 16px;
-}
-
-.service-card h5 {
-  font-family: 'Poppins', sans-serif;
-  color: #4A2E1F;
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  color: #7A5C4B;
-  font-size: 15px;
-}
-
-/* =========================
-   EXPERIENCE
-========================= */
+/* EXPERIENCE */
 .experience-card {
-  max-width: 620px;
+  max-width: 600px;
   margin: auto;
   background-color: #ffffff;
   padding: 36px;
   border-radius: 22px;
   text-align: center;
-  box-shadow: 0 15px 30px rgba(74, 46, 31, 0.15);
 }
 
-.experience-card h5 {
-  font-family: 'Poppins', sans-serif;
-  color: #4A2E1F;
-}
-
-.experience-card span {
-  font-size: 14px;
-  color: #8B6A55;
-}
-
-.experience-card p {
-  margin-top: 14px;
-  color: #7A5C4B;
-}
-
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 .contact-form {
   max-width: 520px;
   margin: auto;
@@ -199,55 +135,24 @@ body {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 12px;
   margin-bottom: 14px;
   border-radius: 8px;
   border: 1px solid #D8CFC7;
 }
 
-.contact-form textarea {
-  resize: none;
-}
-
 .contact-form button {
   width: 100%;
   background-color: #C08457;
-  color: #ffffff;
+  color: white;
   border: none;
   padding: 12px;
   border-radius: 30px;
 }
 
-.contact-form button:hover {
-  background-color: #A86C42;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 .footer {
   background-color: #F2E8DF;
   text-align: center;
   padding: 30px;
-  color: #5C4033;
-}
-
-.footer a {
-  color: #C08457;
-  font-size: 24px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 36px;
-  }
-
-  .profile-img {
-    width: 220px;
-    height: 220px;
-    margin-top: 30px;
-  }
 }
