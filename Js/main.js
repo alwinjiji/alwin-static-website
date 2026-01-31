@@ -1,3 +1,4 @@
+// Fade animation
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -6,6 +7,10 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('.fade').forEach(el => {
-  observer.observe(el);
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+// Dark mode toggle
+const toggle = document.getElementById('themeToggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
 });
