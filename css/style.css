@@ -44,9 +44,16 @@ body {
 /* HERO */
 .hero-section {
   min-height: calc(100vh - 72px);
-  padding-top: 90px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   background-color: #F2E8DF;
   display: flex;
+  align-items: center;
+}
+
+/* 🔑 FIX */
+.hero-section .row {
+  width: 100%;
   align-items: center;
 }
 
@@ -82,7 +89,7 @@ body {
   text-decoration: none;
 }
 
-/* PROFILE IMAGE */
+/* IMAGE */
 .profile-img {
   width: 260px;
   height: 260px;
@@ -104,50 +111,7 @@ body {
 .section-title {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin-bottom: 50px;
   color: #4A2E1F;
-}
-
-/* SERVICES */
-.service-card {
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-/* EXPERIENCE */
-.experience-card {
-  max-width: 600px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 36px;
-  border-radius: 22px;
-  text-align: center;
-}
-
-/* CONTACT */
-.contact-form {
-  max-width: 520px;
-  margin: auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 14px;
-  border-radius: 8px;
-  border: 1px solid #D8CFC7;
-}
-
-.contact-form button {
-  width: 100%;
-  background-color: #C08457;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 30px;
 }
 
 /* FOOTER */
