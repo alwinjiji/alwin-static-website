@@ -1,6 +1,18 @@
 /* =========================
    RESET & BASE
 ========================= */
+body::before {
+  content: "STYLE v7";
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #C08457;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  z-index: 9999;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -232,6 +244,18 @@ body {
   padding: 30px;
   color: #5C4033;
 }
+.linkedin-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #C08457;
+  text-decoration: none;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+
 
 /* =========================
    RESPONSIVE
