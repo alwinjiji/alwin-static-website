@@ -200,10 +200,19 @@ header {
 /* =========================
    FOOTER
 ========================= */
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 25px;
-  border-top: 1px solid var(--border);
-  margin-top: 60px;
+  padding: 24px 16px;
+  border-top: 1px solid #e5e7eb;
+  color: #64748b;
   font-size: 14px;
+  background: #ffffff;
+}
+
+/* Dark mode footer (optional) */
+body.dark footer {
+  background: #0f172a;
+  color: #94a3b8;
+  border-top-color: #1f2937;
 }
